@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, black, white);
+}
+#box {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+#clock {
+    font-size: 48px;
+}

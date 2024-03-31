@@ -1,0 +1,70 @@
+#dong-gop {
+    background:url(Acer_Wallpaper_03_3840x2400.jpg);
+    min-height: 100vh;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+#dong-gop h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#dong-gop ul {
+    list-style: none;
+    padding: 0;
+}
+
+#dong-gop ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+#dong-gop ul li .noi-dung {
+    overflow: hidden;
+}
+
+#dong-gop ul li .noi-dung p {
+    margin-bottom: 5px;
+}
+
+#dong-gop ul li .noi-dung strong {
+    font-weight: bold;
+}
+
+#dong-gop form {
+    margin-top: 10px;
+}
+
+#dong-gop form input {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 350px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+#dong-gop form button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+h2 {color: black;text-align: center;
+}
+h3 {color: black;text-align: center;}
+#dong-gop .btn{
+    background-color: black; 
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px 30px;
+}

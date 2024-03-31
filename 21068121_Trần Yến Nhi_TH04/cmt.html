@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cmt.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góp ý sản phẩm</title>
+
+</head>
+<body>
+    <div id="dong-gop">
+        <h2>ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h2>
+        <h3>Mọi đóng góp của bạn sẽ được chúng tôi ghi nhận và cải thiện. Cảm ơn bạn!</h3>
+        <ul></ul>
+        <form>
+            <input type="text" id="name" placeholder="Tên của bạn...">
+            <input type="text" id="comment" placeholder="Viết đánh giá của bạn...">
+            <p><button class="btn" type="submit">Gửi</button></p>
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector("#dong-gop form");
+        const ul = document.querySelector("#dong-gop ul");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const name = "@"+document.querySelector("#name").value; 
+            const comment = document.querySelector("#comment").value;
+            const currentDate = new Date();
+            const timestamp = currentDate.toLocaleString();
+            const li = document.createElement("li");
+            li.innerHTML = `
+            <div class="noi-dung">
+                    <p><strong>${name}</strong>: ${comment}</p>
+                    <p><em>${timestamp}</em></p>
+                </div>
+            `;
+            ul.appendChild(li);
+            document.querySelector("#name").value = "";
+            document.querySelector("#comment").value = "";
+        });
+    </script>
+</body>
+</html>

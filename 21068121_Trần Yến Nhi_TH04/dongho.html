@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bai2: Đồng hồ </title>
+    <link rel="stylesheet" href="./dongho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="box">
+        <i class="fa fa-clock-o" style="font-size:50px;"></i>
+        <div id="clock"></div>
+    </div>
+
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            minutes = minutes < 10 ? '0'+minutes : minutes;
+            seconds = seconds < 10 ? '0'+seconds : seconds;
+            var timeStr = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+            document.getElementById('clock').textContent = timeStr;
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
